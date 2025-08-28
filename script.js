@@ -21,14 +21,9 @@ function createTable() {
     let tr = document.createElement("tr");
 
     for (let j = 0; j < cn; j++) {
-      let cell;
-      if (i === 0) {
-        cell = document.createElement("th");
-      } else {
-        cell = document.createElement("td");
-      }
-      cell.innerHTML = `Row-${i} Column-${j}`;
-      tr.appendChild(cell);
+      let td = document.createElement("td");
+      td.innerHTML = `Row-${i} Column-${j}`;
+      tr.appendChild(td);
     }
 
     table.appendChild(tr);
